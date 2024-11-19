@@ -1,0 +1,12 @@
+<script>
+    function xyz(){
+        return ()=>{
+            return ()=>{
+                return 100;
+            }
+        }
+    }
+
+    var record = xyz()()();
+    console.log(record);
+</script>

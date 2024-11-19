@@ -1,0 +1,22 @@
+<script>
+    var arr = [100, 20, 30, 40, 50, 60,6];
+    var largest = -Infinity;
+    var secondlargest = -Infinity;
+    var thirdlargest = -Infinity;
+
+    for (val of arr) {
+        if (val > largest) {
+            thirdlargest = secondlargest;  //30
+            secondlargest = largest;       //10
+            largest = val;  
+                                     //50
+        } else if (val > secondlargest && val < largest) {
+            thirdlargest = secondlargest;
+            secondlargest = val;
+        } else if (val > thirdlargest && val < secondlargest) {
+            thirdlargest = val;
+        }
+    }
+
+    console.log(thirdlargest);  // Output should be 40 for this array
+</script>

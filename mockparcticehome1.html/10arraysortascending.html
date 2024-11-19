@@ -1,0 +1,13 @@
+<script>
+    var arr = [100,90,99,80,70,65,30,10];
+    for(i=1;i<=arr.length;i++){
+        for(j=0;j<i;j++){
+            if(arr[i]<arr[j]){
+                var val = arr[i];
+                arr[i]=arr[j];
+                arr[j]=val;
+            }
+        }
+    }
+    console.log(arr);
+</script>

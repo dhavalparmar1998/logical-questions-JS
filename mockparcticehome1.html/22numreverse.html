@@ -1,0 +1,10 @@
+<script>
+  var num = 123;
+  var reversed = 0;
+
+  while(num>0){
+    var reversed = 10*reversed + (num%10);  //3
+    var num = Math.floor(num/10); //12
+  }
+  console.log(reversed);
+</script>

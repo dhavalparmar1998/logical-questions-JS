@@ -1,0 +1,15 @@
+<script>
+    var arr = [10,20,30,40];
+    var smallest = Infinity;
+    var secondsmallest = Infinity;
+    for(val of arr){
+        if(val<smallest){
+            secondsmallest=smallest;
+            smallest=val;
+        }
+        else if(val<secondsmallest && val>smallest){
+            secondsmallest=val;
+        }
+    }
+    console.log(secondsmallest);
+</script>

@@ -1,0 +1,23 @@
+<script>
+    let arr = [1, 2, 3, 4, 5];
+let start = 0;
+let end = arr.length - 1;
+
+while (start < end) {
+    // console.log(arr[start]);  1
+  arr[start] = arr[start] + arr[end];
+  console.log(arr[start]); //6
+  arr[end] = arr[start] - arr[end];
+  console.log(arr[end]); //1
+  arr[start] = arr[start] - arr[end];
+  console.log(arr[start]); //5
+
+  
+  start++;
+  end--;
+}
+
+console.log(arr); // Output: [5, 4, 3, 2, 1]
+
+</script>
+
